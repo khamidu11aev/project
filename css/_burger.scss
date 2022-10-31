@@ -1,0 +1,15 @@
+.burger-menu {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    i{
+        position: relative;
+        top: 55%;
+        right: 80%;
+        width: 60px;
+        font-size: 25px;
+        height: 60px;
+        cursor: pointer;
+    }
+}

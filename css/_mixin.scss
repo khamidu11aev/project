@@ -1,0 +1,124 @@
+@mixin headline {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+
+@mixin btn1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin headline2 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@mixin headline_text {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+@mixin text_ {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px
+}
+
+@mixin btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px
+}
+
+@mixin subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+@mixin subtitle2 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+@mixin subtitle_text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@mixin subtitle_content {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+@mixin content_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+@mixin content_headline {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+@mixin footer_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+
+@mixin footer_headline {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+
+
+@mixin devices ($breakpoint) {
+    @if $breakpoint==xxl{
+        @media only screen and (max-width: 1700px) {
+            @content;
+        }
+    }
+    @if $breakpoint==xl {
+        @media only screen and (max-width: 1439px) {
+            @content;
+        }
+    }
+
+    @if $breakpoint==lg {
+        @media only screen and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @if $breakpoint==md {
+        @media only screen and (max-width: 991px) {
+            @content;
+        }
+    }
+    @if $breakpoint==sm {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @if $breakpoint==xs {
+        @media only screen and (max-width: 575px) {
+            @content;
+        }
+    }
+}
+
+
